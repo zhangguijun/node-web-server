@@ -6,7 +6,7 @@ const { get, set } = require('./src/db/redis')
 // 获取 cookie 的过期时间
 const getCookieExpires = () => {
   const d = new Date()
-  d.setTime(d.getTime() + (60 * 1000))
+  d.setTime(d.getTime() + (24 * 60 * 60 * 1000))
   console.log('d.toGMTString() is ', d.toGMTString())
   return d.toGMTString()
 }
