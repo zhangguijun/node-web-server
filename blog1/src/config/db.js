@@ -12,6 +12,10 @@ if (env === 'dev') {
     port: '3306',
     database: 'myblog'
   }
+  REDIS_CONF = {
+    host: '127.0.0.1',
+    port: '6379',
+  }
 }
 if (env === 'production') {
   MYSQL_CONF = {
@@ -20,6 +24,10 @@ if (env === 'production') {
     password: 'zhanghao',
     port: '3306',
     database: 'myblog'
+  }
+  REDIS_CONF = {
+    host: '127.0.0.1',
+    port: '6379',
   }
 }
 
