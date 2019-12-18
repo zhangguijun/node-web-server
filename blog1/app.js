@@ -3,7 +3,7 @@ const queryString = require('querystring')
 const handleBlogRouter = require('./src/router/blog')
 const handleUserRouter = require('./src/router/user')
 const { get, set } = require('./src/db/redis')
-const { access } = require('./src/uitl/log')
+const { access } = require('./src/utils/log')
 // 获取 cookie 的过期时间
 const getCookieExpires = () => {
   const d = new Date()
